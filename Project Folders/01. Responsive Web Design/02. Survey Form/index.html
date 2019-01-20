@@ -20,56 +20,91 @@
       <div class="form-body">
         <p id="description">Share a positive experience</p>
         <form id="survey-form">
-          <p>
-            <label id="name-label" for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-          </p>
 
-          <p>
-            <label id="email-label" for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
-          </p>
+          <!-- Name -->
+          <div class="form-row">
+            <div class="label">
+              <label id="name-label" for="name">Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+          </div>
+          
+          <!-- Email -->
+          <div class="form-row">
+            <div class="label">
+              <label id="email-label" for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+          </div>
 
-          <p>
-            <label id="number-label" for="number">How good was it?</label>
-            <input type="number" name="number" id="number" min="1" max="10" placeholder="Scale of 1-10" required>
-          </p>
+          <!-- How good was it? -->
+          <div class="form-row">
+            <div class="label">
+              <label id="number-label" for="number">How good was it?</label>
+            </div>
+            <div class="input-field">
+              <input type="number" name="number" id="number" min="1" max="10" placeholder="Scale of 1-10" required>
+            </div>
+          </div>
 
-          <p>
-            <label for="dropdown">Where did it happen?</label>
-            <select name="dropdown" id="dropdown">
-              <option value="home">Home</option>
-              <option value="school">School</option>
-              <option value="work">Work</option>
-            </select>
-          </p>
+          <!-- Where did it happen? -->
+          <div class="form-row">
+            <div class="label">
+              <label for="dropdown">Where did it happen?</label>
+            </div>
+            <div class="input-field">
+              <select name="dropdown" id="dropdown">
+                <option value="home">Home</option>
+                <option value="school">School</option>
+                <option value="work">Work</option>
+              </select>
+            </div>
+          </div>
 
-          <p>
-            <label>Time of the day</label>
+          <!-- Time of the day -->
+          <div class="form-row">
+            <div class="label">
+              <label>Time of the day</label>
+            </div>
+            <div class="input-field">
+              <input type="radio" name="time-of-day" id="morning" value="morning">
+              <label for="morning">Morning</label><br>
+              <input type="radio" name="time-of-day" id="afternoon" value="afternoon">
+              <label for="afternoon">Afternoon</label><br>
+              <input type="radio" name="time-of-day" id="evening" value="evening">
+              <label for="evening">Evening</label>
+            </div>
+          </div>
 
-            <input type="radio" name="time-of-day" id="morning" value="morning">
-            <label for="morning">Morning</label><br>
-            <input type="radio" name="time-of-day" id="afternoon" value="afternoon">
-            <label for="afternoon">Afternoon</label><br>
-            <input type="radio" name="time-of-day" id="evening" value="evening">
-            <label for="evening">Evening</label>
-          </p>
+          <!-- Emotions experienced -->
+          <div class="form-row">
+            <div class="label">
+              <label>Emotions experienced</label>
+            </div>
+            <div class="input-field">
+              <input type="checkbox" name="excited" id="excited" value="excited">
+              <label for="excited">Excited</label><br>
+              <input type="checkbox" name="humbled" id="humbled" value="humbled">
+              <label for="humbled">humbled</label><br>
+              <input type="checkbox" name="loved" id="loved" value="loved">
+              <label for="loved">Loved</label>
+            </div>
+          </div>
 
-          <p>
-            <label>Emotions experienced</label>
+          <!-- Additional information -->
+          <div class="form-row">
+            <div class="label">
+              <label for="additional-info">Additional information on the experience</label>
+            </div>
+            <div class="input-field">
+              <textarea name="additional-info" cols="30" rows="10" placeholder="Tell us more..."></textarea>
+            </div>
+          </div>
 
-            <input type="checkbox" name="excited" id="excited" value="excited">
-            <label for="excited">Excited</label><br>
-            <input type="checkbox" name="humbled" id="humbled" value="humbled">
-            <label for="humbled">humbled</label><br>
-            <input type="checkbox" name="loved" id="loved" value="loved">
-            <label for="loved">Loved</label>
-          </p>
-
-          <p class="more-info">
-            <label for="additional-info">Additional information on the experience</label>
-            <textarea name="additional-info" cols="30" rows="10" placeholder="Tell us more..."></textarea>
-          </p>
 
           <p class="submit-btn">
             <button type="submit" id="submit">Submit</button>
