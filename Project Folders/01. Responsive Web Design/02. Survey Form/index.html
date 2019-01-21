@@ -8,10 +8,9 @@
   <title>Survey Form</title>
 </head>
 <body>
-  
-  <div class="container">
-    
-    <div class="form-wrapper">
+
+
+  <div class="form-wrapper">
       
       <div class="form-header">
         <h1 id="title">Good Vibes Form</h1>
@@ -23,41 +22,41 @@
 
           <!-- Name -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label id="name-label" for="name">Name</label>
             </div>
-            <div class="input-field">
-              <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <div class="input-div">
+              <input type="text" name="name" id="name" class="text-input" placeholder="Enter your name" required>
             </div>
           </div>
           
           <!-- Email -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label id="email-label" for="email">Email</label>
             </div>
-            <div class="input-field">
-              <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <div class="input-div">
+              <input type="email" name="email" id="email" class="text-input" placeholder="Enter your email" required>
             </div>
           </div>
 
           <!-- How good was it? -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label id="number-label" for="number">How good was it?</label>
             </div>
-            <div class="input-field">
-              <input type="number" name="number" id="number" min="1" max="10" placeholder="Scale of 1-10" required>
+            <div class="input-div">
+              <input type="number" name="number" id="number" class="text-input" min="1" max="10" placeholder="Scale of 1-10" required>
             </div>
           </div>
 
           <!-- Where did it happen? -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label for="dropdown">Where did it happen?</label>
             </div>
-            <div class="input-field">
-              <select name="dropdown" id="dropdown">
+            <div class="input-div">
+              <select name="dropdown" id="dropdown" class="dropdown">
                 <option value="home">Home</option>
                 <option value="school">School</option>
                 <option value="work">Work</option>
@@ -67,49 +66,75 @@
 
           <!-- Time of the day -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label>Time of the day</label>
             </div>
-            <div class="input-field">
-              <input type="radio" name="time-of-day" id="morning" value="morning">
-              <label for="morning">Morning</label><br>
-              <input type="radio" name="time-of-day" id="afternoon" value="afternoon">
-              <label for="afternoon">Afternoon</label><br>
-              <input type="radio" name="time-of-day" id="evening" value="evening">
-              <label for="evening">Evening</label>
+            <div class="input-div">
+              <ul style="list-style: none;">
+                <li class="radio-li">
+                  <label for="morning">
+                    <input type="radio" name="time-of-day" id="morning">
+                    Morning
+                  </label>
+                </li>
+
+                <li class="radio-li">
+                  <label for="afternoon">
+                    <input type="radio" name="time-of-day" id="afternoon">
+                    Afternoon
+                  </label>
+                </li>
+
+                <li class="radio-li">
+                  <label for="evening">
+                    <input type="radio" name="time-of-day" id="evening">
+                    Evening
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
 
           <!-- Emotions experienced -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label>Emotions experienced</label>
             </div>
-            <div class="input-field">
-              <input type="checkbox" name="excited" id="excited" value="excited">
-              <label for="excited">Excited</label><br>
-              <input type="checkbox" name="humbled" id="humbled" value="humbled">
-              <label for="humbled">humbled</label><br>
-              <input type="checkbox" name="loved" id="loved" value="loved">
-              <label for="loved">Loved</label>
+            <div class="input-div">
+              <ul style="list-style: none">
+                <li class="checkbox-li">
+                  <label for="excited">
+                    <input type="checkbox" name="excited" id="excited">
+                    Excited
+                  </label>
+                </li>
+                <li class="checkbox-li">
+                  <label for="humbled">
+                    <input type="checkbox" name="humbled" id="humbled">
+                    Humbled
+                  </label>
+                </li>
+                <li class="checkbox-li">
+                  <label for="loved">
+                    <input type="checkbox" name="loved" id="loved">
+                    Loved
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
 
           <!-- Additional information -->
           <div class="form-row">
-            <div class="label">
+            <div class="label-div">
               <label for="additional-info">Additional information on the experience</label>
             </div>
-            <div class="input-field">
-              <textarea name="additional-info" cols="30" rows="10" placeholder="Tell us more..."></textarea>
+            <div class="input-div">
+              <textarea name="additional-info" class="text-input textarea" cols="1" rows="1" placeholder="Tell us more..."></textarea>
             </div>
           </div>
 
-
-          <p class="submit-btn">
-            <button type="submit" id="submit">Submit</button>
-          </p>
-          
+          <button type="submit" class="submit-btn">Submit</button>          
 
         </form>
       </div>
@@ -117,8 +142,6 @@
 
 
     </div>
-
-  </div>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
