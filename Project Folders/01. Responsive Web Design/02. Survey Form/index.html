@@ -9,15 +9,12 @@
 </head>
 <body>
 
+  <h1 id="title">Stories of Humanity</h1>
 
   <div class="form-wrapper">
-      
-      <div class="form-header">
-        <h1 id="title">Good Vibes Form</h1>
-      </div>
 
       <div class="form-body">
-        <p id="description">Share a positive experience</p>
+        <p id="description">Share a positive experience...</p>
         <form id="survey-form">
 
           <!-- Name -->
@@ -73,21 +70,21 @@
               <ul style="list-style: none;">
                 <li class="radio-li">
                   <label for="morning">
-                    <input type="radio" name="time-of-day" id="morning">
+                    <input type="radio" name="time-of-day" id="morning" value="morning">
                     Morning
                   </label>
                 </li>
 
                 <li class="radio-li">
                   <label for="afternoon">
-                    <input type="radio" name="time-of-day" id="afternoon">
+                    <input type="radio" name="time-of-day" id="afternoon" value="afternoon">
                     Afternoon
                   </label>
                 </li>
 
                 <li class="radio-li">
                   <label for="evening">
-                    <input type="radio" name="time-of-day" id="evening">
+                    <input type="radio" name="time-of-day" id="evening" value="afternoon">
                     Evening
                   </label>
                 </li>
@@ -104,19 +101,19 @@
               <ul style="list-style: none">
                 <li class="checkbox-li">
                   <label for="excited">
-                    <input type="checkbox" name="excited" id="excited">
+                    <input type="checkbox" name="excited" id="excited" value="excited">
                     Excited
                   </label>
                 </li>
                 <li class="checkbox-li">
                   <label for="humbled">
-                    <input type="checkbox" name="humbled" id="humbled">
+                    <input type="checkbox" name="humbled" id="humbled" value="humbled">
                     Humbled
                   </label>
                 </li>
                 <li class="checkbox-li">
                   <label for="loved">
-                    <input type="checkbox" name="loved" id="loved">
+                    <input type="checkbox" name="loved" id="loved" value="loved">
                     Loved
                   </label>
                 </li>
@@ -134,7 +131,7 @@
             </div>
           </div>
 
-          <button type="submit" class="submit-btn">Submit</button>          
+          <button type="submit" id="submit" class="submit-btn">Submit</button>          
 
         </form>
       </div>

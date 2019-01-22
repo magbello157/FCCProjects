@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #F1784B;
+    background-color: #a9d7e9;
 }
 
 h1 {
@@ -14,7 +14,7 @@ p {
 .form-wrapper {
     margin: auto;
     width: 800px;
-    background-color: #B3B2B1;
+    background-color: #f3f3f3;
     border-radius: 10px;
     padding: 20px 10px 10px 10px;
 }
@@ -85,4 +85,51 @@ input[type="radio"], input[type="checkbox"] {
     height: 40px;
     width: 80px;
     margin: 10px;
+}
+
+/* Add Responsiveness */
+
+@media (max-width: 833px) {
+    .form-wrapper {
+        width: 70%;
+    }
+
+    .input-div {
+        display: inline-block;
+        text-align: left;
+        width: 48%;
+        vertical-align: middle;
+    }
+
+    .text-input {
+        width: 80%;
+    }
+
+    .dropdown {
+        width: 90%;
+    }
+}
+
+@media (max-width: 520px) {
+    .form-wrapper {
+        width: 80%;
+    }
+
+    .input-div {
+        width: 80%;
+        float: left;
+    }
+
+    .label-div {
+        width: 100%;
+        text-align: left;
+    }
+
+    .text-input {
+        width: 100%
+    }
+
+    .dropdown {
+        width: 100%;
+    }
 }
